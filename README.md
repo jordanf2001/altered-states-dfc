@@ -41,6 +41,16 @@ This project focuses on **resting-state fMRI data** to analyze intrinsic brain n
 
 The full dataset (~233 GB) is **not included in this repository**.
 
+## Dataset Availability Update
+
+Full fMRIPrep derivatives were verified in the local DataLad file tree. The dataset includes resting-state preprocessed BOLD images and corresponding confound regressors, including MNI152NLin2009cAsym-space outputs:
+
+- `*_task-rest_*space-MNI152NLin2009cAsym_desc-preproc_bold.nii.gz`
+- `*_task-rest_*desc-confounds_timeseries.tsv`
+
+This confirms that the dataset can support resting-state functional connectivity and dynamic functional connectivity analyses, pending selective download of the required git-annexed files.
+
+
 ---
 
 # Analysis Pipeline
