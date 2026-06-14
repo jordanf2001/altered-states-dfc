@@ -1,5 +1,11 @@
-nilearn
-scikit-learn
 numpy
 pandas
+scipy
+matplotlib
+seaborn
+nibabel
+nilearn
+scikit-learn
+pybids
+tqdm
 jupyter
