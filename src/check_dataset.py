@@ -33,6 +33,8 @@ def main():
         "ses02_rest_mni_bold": "**/*ses-02*task-rest*space-MNI152NLin2009cAsym_desc-preproc_bold.nii.gz",
         "ses01_rest_confounds": "**/*ses-01*task-rest*desc-confounds_timeseries.tsv",
         "ses02_rest_confounds": "**/*ses-02*task-rest*desc-confounds_timeseries.tsv",
+        "ses01_rest_mni_masks": "**/*ses-01*task-rest*space-MNI152NLin2009cAsym_desc-brain_mask.nii.gz",
+        "ses02_rest_mni_masks": "**/*ses-02*task-rest*space-MNI152NLin2009cAsym_desc-brain_mask.nii.gz",
     }
 
     print("=" * 70)
@@ -75,10 +77,27 @@ def main():
     else:
         print("BOLD/confounds count match:      NO")
 
-    if n_bold > 0 and n_confounds > 0:
+    if n_bold == n_masks:
+        print("BOLD/mask count match:           YES")
+    else:
+        print("BOLD/mask count match:           NO")
+
+    if n_bold > 0 and n_bold == n_confounds == n_masks:
         print("FC/dFC pipeline feasibility:     YES")
     else:
-        print("FC/dFC pipeline feasibility:     NOT YET CONFIRMED")
+        print("FC/dFC pipeline feasibility:     NEEDS REVIEW")
+
+    print()
+    print("=" * 70)
+    print("Session-level Summary")
+    print("=" * 70)
+
+    print(f"ses-01 rest MNI BOLD files:      {len(results['ses01_rest_mni_bold'])}")
+    print(f"ses-02 rest MNI BOLD files:      {len(results['ses02_rest_mni_bold'])}")
+    print(f"ses-01 rest confounds files:     {len(results['ses01_rest_confounds'])}")
+    print(f"ses-02 rest confounds files:     {len(results['ses02_rest_confounds'])}")
+    print(f"ses-01 rest MNI mask files:      {len(results['ses01_rest_mni_masks'])}")
+    print(f"ses-02 rest MNI mask files:      {len(results['ses02_rest_mni_masks'])}")
 
 
 if __name__ == "__main__":
