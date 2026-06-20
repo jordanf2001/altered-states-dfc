@@ -135,6 +135,8 @@ These results are intended as **workflow-validation outputs**, not as evidence f
 | Mean edge dFC variability | 0.361 |
 | Max edge dFC variability | 0.653 |
 
+A machine-readable summary of the pilot run is available at `outputs/pilot_summary.csv`.
+
 ### ROI Time-Series Extraction
 
 ![ROI time-series heatmap](figures/pilot_roi_timeseries_heatmap.png)
