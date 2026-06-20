@@ -115,28 +115,6 @@ The planned analysis pipeline consists of the following steps:
 9. Comparison between static and dynamic connectivity measures
 
 ---
-
-# Repository Structure
-
-```text
-altered-states-dfc/
-├── README.md
-├── LICENSE
-├── requirements.txt
-├── PROJECT_LOG.md
-├── analysispipeline.png
-├── docs/
-│   ├── dataset_status.md
-│   └── analysis_plan.md
-├── src/
-│   ├── check_dataset.py
-│   └── build_file_index.py
-└── outputs/
-    └── file_index/
-        └── rest_file_index.csv
-```
-
----
 ## Interim Pilot Results
 
 To show what the workflow yields, I applied the current pipeline to one pilot resting-state run:
