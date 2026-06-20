@@ -4,7 +4,7 @@
 
 #### Institution: National Taiwan University
 
-(original: Dynamic Functional Connectivity in Psychedelic-Induced Altered States of Consciousness)
+(original topic: Dynamic Functional Connectivity in Psychedelic-Induced Altered States of Consciousness)
 
 ---
 
