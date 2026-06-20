@@ -171,7 +171,7 @@ A machine-readable summary of the pilot run is available at `outputs/pilot_summa
 
 <div align="center">
   <p><b>Static FC Descriptive Checks</b></p>
-  <img src="figures/pilot_static_fc_descriptive_checks.png" alt="Static FC descriptive checks" width="30%">
+  <img src="figures/pilot_static_fc_descriptive_checks.png" alt="Static FC descriptive checks" width="70%">
 </div>
 
 **Figure:** Static FC sanity checks, including the distribution of pairwise FC values and mean connectivity strength by ROI. These plots are not interpreted as ROI-level neurobiological findings.
@@ -180,15 +180,24 @@ A machine-readable summary of the pilot run is available at `outputs/pilot_summa
 
 Dynamic FC was estimated using a sliding-window approach. The pilot run was divided into 45 overlapping windows. For each window, a Fisher z-transformed FC matrix was computed.
 
-![dFC mean connectivity trajectory](figures/pilot_dfc_mean_connectivity_trajectory.png)
+<div align="center">
+  <p><b>dFC Mean Connectivity Trajectory</b></p>
+  <img src="figures/pilot_dfc_mean_connectivity_trajectory.png" alt="dFC mean connectivity trajectory" width="70%">
+</div>
 
 **Figure:** Mean Fisher z-transformed FC across sliding windows. The shaded region indicates ±1 SD across edges within each window.
 
-![dFC variability matrix](figures/pilot_dfc_variability_matrix.png)
+<div align="center">
+  <p><b>dFC Variability Matrix</b></p>
+  <img src="figures/pilot_dfc_variability_matrix.png" alt="dFC variability matrix" width="70%">
+</div>
 
 **Figure:** Edge-wise dFC variability matrix. Brighter values indicate ROI-to-ROI connections with greater temporal fluctuation across windows.
 
-![Window-to-window FC similarity](figures/pilot_window_to_window_fc_similarity.png)
+<div align="center">
+  <p><b>Window-to-window FC Similarity</b></p>
+  <img src="figures/pilot_window_to_window_fc_similarity.png" alt="Window-to-window FC similarity" width="70%">
+</div>
 
 **Figure:** Window-to-window FC pattern similarity matrix. Higher values indicate more similar whole-matrix FC configurations between windows.
 
