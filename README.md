@@ -155,11 +155,14 @@ These results are intended as **workflow-validation outputs**, not as evidence f
 | Mean edge dFC variability | 0.361 |
 | Max edge dFC variability | 0.653 |
 
-### Example Figures
+### ROI Time-Series Extraction
 
-#### ROI Time Series
+The pilot run produced a 504 × 67 ROI time-series matrix using a preliminary grid-based atlas. ROI signals were z-scored for visualization.
 
 ![ROI time-series heatmap](figures/pilot_roi_timeseries_heatmap.png)
+
+**Figure:** Z-scored ROI time-series heatmap from the pilot run. Rows correspond to ROIs and columns correspond to time points.
+
 
 #### Static FC Matrix
 
