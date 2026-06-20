@@ -8,12 +8,20 @@
 
 This repository develops a computationally reproducible workflow for static functional connectivity (FC) and dynamic functional connectivity (dFC) analysis of resting-state fMRI data from the PsiConnect dataset. At the current stage, the project focuses on workflow construction and pilot-run validation, not group-level inference about psychedelic-related effects.
 
-The main goal is to compare **static functional connectivity (FC)** and **dynamic functional connectivity (dFC)** to determine whether dynamic connectivity measures provide additional information beyond traditional static connectivity analyses.
+The long-term goal is to compare static FC and dFC features to evaluate whether dynamic connectivity measures provide complementary information beyond traditional static connectivity analyses.
 
 **Final course presentation slides are available in `doc/final_presentation.pdf`.**
 
-## scope
+## Scope
+
+Here, **reproducible** refers to computational reproducibility:
+
+```text
+same derivatives + same code + same parameters → same outputs
+```
+
 The current repository does not yet establish external replication, generalizability to other datasets, or group-level psychedelic-related effects.
+
 
 ---
 
@@ -40,7 +48,7 @@ The full dataset is **not included in this repository** because neuroimaging fil
 
 ---
 
-# Dataset Availability Update
+# Dataset Availability
 
 Full fMRIPrep derivatives were verified in the local DataLad file tree. The dataset includes resting-state preprocessed BOLD images and corresponding confound regressors, including MNI152NLin2009cAsym-space outputs:
 
@@ -94,7 +102,7 @@ A resting-state file index has also been generated:
 outputs/file_index/rest_file_index.csv
 ```
 
-This file index contains subject/session-level paths for BOLD images, confounds files, and brain masks. It will serve as the input table for future QC, ROI time-series extraction, static FC, and dynamic FC analyses.
+This file index contains subject/session-level paths for BOLD images, confounds files, and brain masks. It will serve as the input table for QC, ROI time-series extraction, static FC, and dynamic FC analyses.
 
 ---
 
@@ -106,12 +114,12 @@ This file index contains subject/session-level paths for BOLD images, confounds 
 
 ---
 
-The planned analysis pipeline consists of the following steps:
+The analysis workflow consists of the following steps:
 
 1. Dataset inspection and BIDS/fMRIPrep structure verification
 2. Resting-state file index generation
 3. BOLD/confounds/mask quality control
-4. ROI parcellation using a standard brain atlas
+4. ROI parcellation using a preliminary grid atlas, with planned replacement by a standard atlas such as Schaefer 100/200
 5. ROI time-series extraction
 6. Static functional connectivity estimation
 7. Sliding-window dynamic functional connectivity estimation
