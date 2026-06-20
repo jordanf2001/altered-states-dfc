@@ -12,7 +12,7 @@ This repository develops a computationally reproducible workflow for static func
 
 The main goal is to compare **static functional connectivity (FC)** and **dynamic functional connectivity (dFC)** to determine whether dynamic connectivity measures provide additional information beyond traditional static connectivity analyses.
 
-Final course presentation slides are available in `docs/final_presentation.pdf`.
+**Final course presentation slides are available in `doc/final_presentation.pdf`.**
 
 ## scope
 The current repository does not yet establish external replication, generalizability to other datasets, or group-level psychedelic-related effects.
