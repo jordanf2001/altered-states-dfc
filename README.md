@@ -208,7 +208,7 @@ outputs/file_index/rest_file_index.csv
 The pilot figures were generated using:
 
 ```text
-notebooks/pilot_figure_generation.ipynb
+pilot_figure_generation.ipynb
 ```
 
 When running the notebook in Google Colab, upload the following derived pilot outputs when prompted:
