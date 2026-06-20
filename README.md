@@ -174,22 +174,28 @@ Pairwise Pearson correlations were computed across the full resting-state run, p
 **Figure:** Static FC matrix from the pilot run. Each cell represents the Pearson correlation between two ROI time series. The diagonal is masked for visualization.
 This output serves as a static reference before dynamic FC estimation.
 
-
-#### Static FC Descriptive Checks
+### Static FC Descriptive Checks
 
 ![Static FC descriptive checks](figures/pilot_static_fc_descriptive_checks.png)
 
-These plots were used as sanity checks to confirm that the static FC output had a reasonable structure.
+These plots were used as sanity checks to inspect the distribution of static FC values and ROI-level mean connectivity. They are not interpreted as ROI-level neurobiological findings.
 
-#### Dynamic FC Summaries
+### Dynamic Functional Connectivity
 
 ![Dynamic FC summaries](figures/pilot_dynamic_fc_summary.png)
 
-The dynamic FC workflow generated window-level, edge-level, and pattern-level summaries from 45 sliding-window FC matrices.
+Dynamic FC was estimated using a sliding-window approach. The pilot run was divided into 45 overlapping windows. For each window, a Fisher z-transformed FC matrix was computed.
+
+The dFC summaries include:
+
+1. **Window-level mean FC trajectory**: average FC across ROI pairs within each window.
+2. **Edge-wise dFC variability**: standard deviation of each ROI-to-ROI connection across windows.
+3. **Window-to-window FC similarity**: similarity between whole-matrix FC patterns across windows.
 
 ### Interpretation
 
-The pilot run confirms that the workflow can generate ROI time series, static FC, and sliding-window dFC outputs from the fMRIPrep derivatives. These outputs are descriptive and are used to validate the pipeline before scaling to the full dataset.
+These interim results show that the workflow can generate ROI time series, static FC, and sliding-window dFC outputs from fMRIPrep derivatives. At this stage, the results validate the computational workflow only. They do not support claims about psychedelic-related effects, session differences, or group-level mechanisms.
+
 
 ---
 
