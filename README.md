@@ -151,13 +151,19 @@ A machine-readable summary of the pilot run is available at `outputs/pilot_summa
 
 ### ROI Time-Series Extraction
 
-![ROI time-series heatmap](figures/pilot_roi_timeseries_heatmap.png)
+<div align="center">
+  <p><b>ROI Time-series Heatmap</b></p>
+  <img src="figures/pilot_roi_timeseries_heatmap.png" alt="ROI time-series heatmap" width="50%">
+</div>
 
 **Figure:** ROI time-series heatmaps from the pilot run. The upper panel shows raw ROI signals, and the lower panel shows z-scored ROI signals. Rows correspond to ROIs and columns correspond to time points.
 
 ### Static Functional Connectivity
 
-![Static FC matrix](figures/pilot_static_fc_fisher_z_matrix.png)
+<div align="center">
+  <p><b>Static FC Matrix</b></p>
+  <img src="figures/pilot_static_fc_fisher_z_matrix.png" alt="Static FC matrix" width="50%">
+</div>
 
 **Figure:** Static FC matrices from the pilot run. The left panel shows raw Pearson correlation values, and the right panel shows Fisher z-transformed FC values. The diagonal is masked for visualization.
 
