@@ -173,6 +173,7 @@ Pairwise Pearson correlations were computed across the full resting-state run, p
 
 **Figure:** Static FC matrix from the pilot run. Each cell represents the Pearson correlation between two ROI time series. The diagonal is masked for visualization.
 This output serves as a static reference before dynamic FC estimation.
+Fisher z-transformed FC matrices are also generated for downstream statistical analysis.
 
 ### Static FC Descriptive Checks
 
