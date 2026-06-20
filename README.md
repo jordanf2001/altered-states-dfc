@@ -169,7 +169,7 @@ This heatmap verifies that ROI time-series extraction produced a usable matrix f
 
 Pairwise Pearson correlations were computed across the full resting-state run, producing a 67 × 67 static FC matrix.
 
-![Static FC matrix](figures/pilot_static_fc_fisher_z_matrix.png.png)
+![Static FC matrix](figures/pilot_static_fc_fisher_z_matrix.png)
 
 **Figure:** Static FC matrix from the pilot run. Each cell represents the Pearson correlation between two ROI time series. The diagonal is masked for visualization.
 This output serves as a static reference before dynamic FC estimation.
