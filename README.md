@@ -34,8 +34,6 @@ Dataset: PsiConnect
 Accession: ds006110  
 Source: https://openneuro.org/datasets/ds006110  
 
-Key features of the dataset include:
-
 This project focuses only on the resting-state fMRI derivatives from the PsiConnect dataset.
 
 The full dataset is **not included in this repository** because neuroimaging files are large. Users should access the original dataset through OpenNeuro and DataLad.
