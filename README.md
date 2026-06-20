@@ -161,7 +161,7 @@ The pilot run produced a 504 × 67 ROI time-series matrix using a preliminary gr
 
 ![ROI time-series heatmap](figures/pilot_roi_timeseries_heatmap.png)
 
-**Figure:** Raw BOLD data & Z-scored ROI time-series heatmap from the pilot run. Rows correspond to ROIs and columns correspond to time points.
+**Figure:** **Figure:** ROI time-series heatmaps from the pilot run. The upper panel shows raw ROI signals, and the lower panel shows z-scored ROI signals. Rows correspond to ROIs and columns correspond to time points.
 
 This heatmap verifies that ROI time-series extraction produced a usable matrix for downstream FC/dFC analysis.
 
@@ -171,7 +171,8 @@ Pairwise Pearson correlations were computed across the full resting-state run, p
 
 ![Static FC matrix](figures/pilot_static_fc_fisher_z_matrix.png)
 
-**Figure:** Static FC matrix from the pilot run. Each cell represents the Pearson correlation between two ROI time series. The diagonal is masked for visualization.
+**Figure:** Static FC matrices from the pilot run. The left panel shows raw Pearson correlation values, and the right panel shows Fisher z-transformed FC values. The diagonal is masked for visualization.
+
 This output serves as a static reference before dynamic FC estimation.
 Fisher z-transformed FC matrices are also generated for downstream statistical analysis.
 
@@ -273,6 +274,7 @@ The file index includes:
 
 - The exact experimental meaning of `ses-01` and `ses-02` still needs to be confirmed from the dataset documentation or associated publication.
 - The current repository has completed dataset inspection and file indexing, but ROI time-series extraction has not yet been implemented.
+- Motion and nuisance control are not finalized.
 - Static FC and sliding-window dFC analyses are planned but not yet completed.
 - Large neuroimaging files are not stored in this GitHub repository.
 - Further quality control is required to verify BOLD readability, image dimensions, timepoints, TR, confounds alignment, and motion quality.
