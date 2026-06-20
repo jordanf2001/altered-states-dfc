@@ -181,6 +181,15 @@ Fisher z-transformed FC matrices are also generated for downstream statistical a
 
 These plots were used as sanity checks to inspect the distribution of static FC values and ROI-level mean connectivity. They are not interpreted as ROI-level neurobiological findings.
 
+### Dynamic FC: Window-Level Summary
+
+Using a sliding-window approach, the pilot run was divided into 45 overlapping windows. For each window, a Fisher z-transformed FC matrix was computed.
+
+![dFC mean connectivity trajectory](figures/pilot_dfc_mean_connectivity_trajectory.png)
+
+**Figure:** Mean Fisher z-transformed FC across sliding windows. The shaded region indicates ±1 SD across edges within each window.
+
+
 ### Dynamic Functional Connectivity
 
 ![Dynamic FC summaries](figures/pilot_dynamic_fc_summary.png)
