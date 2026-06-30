@@ -15,7 +15,7 @@
 
 Prolonged, task-free scans capture **intrinsic brain dynamics** without external interference.
 
-### The Problem with Static Analysis
+### The Problem with Static FC
 
 Traditional **static functional connectivity (sFC)** averages the entire scan into a single matrix — **erasing temporal dynamics completely**.
 
@@ -25,6 +25,8 @@ The figure below shows the reality: connectivity patterns are **not constant**. 
   <p><b>Why Dynamics Matter: Window-to-Window FC Similarity</b></p>
   <img src="sch100_window_to_window_fc_similarity.png" alt="Window-to-window FC similarity" width="50%">
 </div>
+
+(sliding window method, 附示意圖)
 
 Static analysis would **average all this away**.
 
@@ -41,11 +43,10 @@ I built a **workflow** that goes from
 
 `fMRIPrep derivatives → ROI extraction → static FC → sliding-window dFC`
 
-**Dataset:** PsiConnect (OpenNeuro `ds006110`), 127 resting-state runs verified.
+**Dataset:** PsiConnect (OpenNeuro `ds006110`) — a **psychedelic** neuroimaging study. This dataset is ideal for dFC analysis because altered consciousness states exhibit rich temporal dynamics.
 
-**Current focus:** Workflow validation on one pilot run.
+**Current focus:** Workflow validation on one pilot run 'sub001', 2 pipelines.
 
-The **pipeline** runs from dataset inspection and QC, through ROI extraction, to sliding-window dFC feature extraction:
 
 <div align="center">
   <img src="analysispipeline.png" alt="analysis pipeline" width="30%">
