@@ -147,12 +147,3 @@ With Schaefer 100, these can be **mapped onto large-scale networks** — impossi
 
 This open, plug-and-play toolkit is ready to scale to the remaining 127 PsiConnect runs, and can lower the technical barrier for newcomers to dFC analysis — including my own future **sensory-deprivation research**.
 
----
-
-## 6. Next Steps
-
-- Add motion QC and global-signal checks.
-- Scale to all 127 runs.
-- Map Schaefer 100 onto 7 large-scale networks.
-- Compare FC/dFC across sessions/conditions.
-
