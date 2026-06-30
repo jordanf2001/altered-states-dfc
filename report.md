@@ -45,7 +45,7 @@ I built a **workflow** that goes from
 
 **Dataset:** PsiConnect (OpenNeuro `ds006110`) — a **psychedelic** neuroimaging study. This dataset is ideal for dFC analysis because altered consciousness states exhibit rich temporal dynamics.
 
-**Current focus:** Workflow validation on one pilot run 'sub001', 2 pipelines.
+**Current focus:** Workflow validation on one pilot run 'sub001', 2 different pipelines.
 
 
 <div align="center">
