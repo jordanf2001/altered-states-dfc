@@ -31,7 +31,7 @@ def main():
         run = row["run"]
         ts_path = Path(row["timeseries_z_path"])
 
-        base = f"{subject}_{session}_schaefer100_{task}_{run}"
+        base = f"{subject}_{session}_{task}_{run}"
 
         print("=" * 70)
         print(f"Processing FC/DFC: {base}")
