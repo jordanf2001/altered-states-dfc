@@ -110,6 +110,7 @@ This file index contains subject/session-level paths for BOLD images, confounds 
 
 <div align="center">
   <img src="analysispipeline.png" alt="analysis pipeline" width="30%">
+
 </div>
 
 ---
