@@ -67,11 +67,17 @@ sub-PC001 / ses-01 / task-rest / run-1
 
 **Result:** The pipeline successfully produced ROI time series, static FC, and 45 dynamic FC windows. The code works.
 
+### but! Grid atlas only cuts the brain by geometry. </b></p> 
+
+<div align="center">
+<p><b>So...</b></p>
+</div>
+
 ---
 
 ## 4. Pipeline 2 — System Upgrade with Schaefer 100 ⭐
 
-A grid atlas only cuts the brain by geometry. To make results **biologically meaningful**, I upgraded the same pipeline to the **Schaefer 100 atlas**, which is defined from real functional brain networks (e.g. the Default Mode Network).
+To make results **biologically meaningful**, I upgraded to the **Schaefer 100 atlas** these two days, which is a functionally-defined atlas based on real brain networks (e.g., Default Mode Network).
 
 > **Why Schaefer 100, not 400?** Finer parcellation (400) demands much heavier noise regression. Schaefer 100 is the best balance between **capturing network dynamics** and **controlling noise** at the pilot stage.
 
@@ -88,24 +94,31 @@ A grid atlas only cuts the brain by geometry. To make results **biologically mea
 
 <div align="center">
   <p><b>Schaefer 100 — ROI Time-Series Heatmap</b></p>
-  <img src="sch100_roi_timeseries_heatmap.png" alt="Schaefer static FC" width="50%">
+  <img src="sch100_roi_timeseries_heatmap.png" alt="Schaefer ROI heatmap" width="50%">
 </div>
 
-**Note the vertical bands:** many ROIs fluctuate at the *same* time points. In fMRI this typically reflects **global signal, head motion, or physiological noise**. I treat this heatmap as a **quality-control signal**, not as neural evidence — it tells me denoising must be strengthened next.
+**Vertical bands = many ROIs fluctuating together.** This typically reflects **global signal, head motion, or physiological noise** — not neural evidence. It's a **QC signal** telling me denoising needs strengthening.
+
 
 ### 4.2 Static FC — Grid vs Schaefer 100
+
+<div align="center">
+  <p><b>grid atlas - Static FC Matrix</b></p>
+  <img src="figures/pilot_static_fc_fisher_z_matrix.png" alt="Static FC matrix" width="70%">
+</div>
 
 <div align="center">
   <p><b>Schaefer 100 — Static FC Matrix</b></p>
   <img src="sch100_static_fc_fisher_z_matrix.png" alt="Schaefer static FC" width="70%">
 </div>
 
-Compared with the grid atlas, the Schaefer 100 matrix shows a **more structured, network-organized layout** and a **narrower FC distribution** (SD 0.334 → 0.257). Because ROIs are now functionally coherent, connectivity estimates are more stable and interpretable.
+**Key difference:** Schaefer 100 shows more **structured, network-organized** layout. FC distribution is narrower (SD 0.334 → 0.257) because ROIs are now functionally coherent — connectivity estimates are more stable.
 
 <div align="center">
   <p><b>Schaefer 100 — Static FC Descriptive Checks</b></p>
-  <img src="sch100_static_fc_descriptive_checks.png" alt="Schaefer FC checks" width="68%">
+  <img src="sch100_static_fc_descriptive_checks.png" alt="Schaefer FC checks" width="65%">
 </div>
+
 
 ### 4.3 Dynamic FC
 
