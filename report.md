@@ -30,21 +30,15 @@ This repository develops a **computationally reproducible workflow** for static 
 same derivatives + same code + same parameters → same outputs
 ```
 
-At this stage the project focuses on **workflow construction and pilot-run validation**, not group-level claims about psychedelic effects.
+At this stage the project focuses on **workflow construction and pilot-run validation**.
+
+The **pipeline** runs from dataset inspection and QC, through ROI extraction, to sliding-window dFC feature extraction:
 
 <div align="center">
-  <img src="analysispipeline.png" alt="analysis pipeline" width="45%">
+  <img src="analysispipeline.png" alt="analysis pipeline" width="30%">
 </div>
 
-The pipeline runs from dataset inspection and QC, through ROI extraction, to sliding-window dFC feature extraction:
 
-1. Dataset inspection and BIDS/fMRIPrep structure verification
-2. Resting-state file index generation
-3. BOLD / confounds / mask quality control
-4. ROI parcellation and time-series extraction
-5. Static FC estimation
-6. Sliding-window dFC estimation
-7. Dynamic feature extraction and static-vs-dynamic comparison
 
 **Dataset status:** 127 resting-state runs with matched BOLD / confounds / mask files were verified (ses-01: 65, ses-02: 62). The pipeline feasibility check passed.
 
