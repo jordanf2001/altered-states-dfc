@@ -3,12 +3,36 @@ import argparse
 import numpy as np
 import pandas as pd
 
-# ... (corr_matrix, fisher_z, vectorize_upper_triangle 函式保持不變) ...
+def corr_matrix(ts):
+    """
+    Compute Pearson correlation matrix across ROIs.
+
+    Input shape:
+    timepoints x ROIs
+    """
+    return np.corrcoef(ts, rowvar=False)
+
+
+def fisher_z(r):
+    """
+    Fisher z-transform with clipping to avoid infinity.
+    """
+    r = np.clip(r, -0.999999, 0.999999)
+    return np.arctanh(r)
+
+
+def vectorize_upper_triangle(mat):
+    """
+    Return upper-triangular values excluding diagonal.
+    """
+    idx = np.triu_indices_from(mat, k=1)
+    return mat[idx]
+
 
 def main():
     parser = argparse.ArgumentParser(description="Compute static FC and sliding-window DFC from ROI time series.")
     parser.add_argument("--timeseries-summary", type=str, default="outputs/roi_timeseries/roi_timeseries_summary.csv")
-    # 修改輸出目錄預設值
+    # 設定輸出目錄至 fc_dfc_schaefer100
     parser.add_argument("--output-dir", type=str, default="outputs/fc_dfc_schaefer100")
     parser.add_argument("--window-size", type=int, default=60)
     parser.add_argument("--step-size", type=int, default=10)
@@ -31,6 +55,7 @@ def main():
         run = row["run"]
         ts_path = Path(row["timeseries_z_path"])
 
+        # 使用原始基礎命名格式，確保與萃取出的檔案名稱匹配
         base = f"{subject}_{session}_{task}_{run}"
 
         print("=" * 70)
@@ -104,7 +129,7 @@ def main():
 
         window_fc_vectors = np.array(window_fc_vectors)
 
-        # DFC variability: standard deviation across windows for each edge
+        # DFC variability
         edge_std = np.nanstd(window_fc_vectors, axis=0)
         edge_mean = np.nanmean(window_fc_vectors, axis=0)
 
@@ -152,8 +177,6 @@ def main():
     print("=" * 70)
     print("FC/DFC computation completed")
     print(f"Summary saved to: {all_summary_out}")
-    print(all_summary_df.to_string(index=False))
-
 
 if __name__ == "__main__":
     main()
