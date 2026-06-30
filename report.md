@@ -22,15 +22,13 @@ If we only ran static analysis, this temporal structure would be **completely av
 
 ## 2. The Solution: A Reproducible Pipeline
 
-This repository develops a **computationally reproducible workflow** for static and dynamic FC analysis of resting-state fMRI from the PsiConnect dataset (OpenNeuro `ds006110`).
+I built a **workflow** that goes from 
 
-**Reproducible** here means computational reproducibility:
+`fMRIPrep derivatives → ROI extraction → static FC → sliding-window dFC`
 
-```text
-same derivatives + same code + same parameters → same outputs
-```
+**Dataset:** PsiConnect (OpenNeuro `ds006110`), 127 resting-state runs verified.
 
-At this stage the project focuses on **workflow construction and pilot-run validation**.
+**Current focus:** Workflow validation on one pilot run.
 
 The **pipeline** runs from dataset inspection and QC, through ROI extraction, to sliding-window dFC feature extraction:
 
@@ -43,7 +41,7 @@ The **pipeline** runs from dataset inspection and QC, through ROI extraction, to
 
 ## 3. Pipeline 1 — Validation with a Preliminary Grid Atlas
 
-To prove the pipeline runs end-to-end, I first applied it to one pilot run using a **preliminary grid atlas (67 ROIs)**.
+I first validated the pipeline using a **preliminary grid atlas (67 ROIs)** on one pilot run:
 
 ```text
 sub-PC001 / ses-01 / task-rest / run-1
