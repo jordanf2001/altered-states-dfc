@@ -137,13 +137,13 @@ With Schaefer 100, these can be **mapped onto large-scale networks** — impossi
 
 | | Pipeline 1 (Grid) | Pipeline 2 (Schaefer 100) |
 |---|---|---|
-| Purpose | Code / data validation | Feature extraction |
+| Purpose | **Code validation + Data QC** | Feature extraction |
 | Atlas | Geometric grid | Functional networks |
 | Interpretability | Low | Network-level |
-| Status | ✅ Validated | ✅ Validated |
+| **Best for** | **Newcomers & Data validation** | **Researchers building dFC studies** |
 
-- **Pipeline 1** proves the workflow runs correctly from data to sFC/dFC.
-- **Pipeline 2** introduces preliminary denoising and Schaefer 100 to extract **neurobiologically meaningful** dynamic features.
+- **Pipeline 1** is your **testing ground** — validate your fMRIPrep derivatives work end-to-end, check if your data can run through the full dFC pipeline, even if you're new to neuroimaging code.
+- **Pipeline 2** adds Schaefer 100 and preliminary denoising to extract **neurobiologically meaningful** dynamic features — ready for real research.
 
 This open, plug-and-play toolkit is ready to scale to the remaining 127 PsiConnect runs, and can lower the technical barrier for newcomers to dFC analysis — including my own future **sensory-deprivation research**.
 
