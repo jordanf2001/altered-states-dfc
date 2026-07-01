@@ -1,4 +1,4 @@
-# Computationally Reproducible FC/dFC Workflow for Psychedelic Resting-State fMRI
+# Computationally Reproducible dynamic Functional connectivity Workflow for Psychedelic Resting-State fMRI
 
 #### Author: Yu-kan Fan (范育康)
 #### Institution: National Taiwan University
