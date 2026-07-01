@@ -47,7 +47,9 @@ I built a **workflow** that goes from
 
 `fMRIPrep derivatives → ROI extraction → static FC → sliding-window dFC`
 
-**Dataset:** PsiConnect (OpenNeuro `ds006110`) — a **psychedelic** neuroimaging study. This dataset is ideal for dFC analysis because altered consciousness states exhibit rich temporal dynamics.
+### Dataset:
+
+PsiConnect (OpenNeuro `ds006110`) — a **psychedelic** neuroimaging study. This dataset is ideal for dFC analysis because altered consciousness states exhibit rich temporal dynamics.
 
 ### Current focus:
 
