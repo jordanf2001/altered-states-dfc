@@ -5,15 +5,48 @@
 
 ---
 
-## 1. Motivation: Consciousness Is Dynamic
+## 1. What This Project Does
 
-### Conscious states fluctuate over time. This is evident across multiple research domains:
+This project builds a **reproducible pipeline for dynamic functional connectivity (dFC)** analysis in fMRI data.
 
-- **Resting-state** 
-- **Psychedelic (drug-induced altered-state)** 
-- **Sensory deprivation** 
+It is especially designed for **task-free and long-duration experiments**, where brain activity evolves naturally over time rather than being driven by external tasks.
 
-Prolonged, task-free scans capture **intrinsic brain dynamics** without external interference.
+This makes it suitable for studying:
+
+- Resting-state brain activity  
+- Drug-induced altered states  
+- Sensory deprivation  
+
+## 2. Why Dynamics Matter
+
+In task-free conditions, brain connectivity is usually not static.
+
+Traditional **static functional connectivity (sFC)** averages the entire scan into a single matrix, which removes all temporal information.
+
+Instead, **dynamic functional connectivity (dFC)** captures how connectivity patterns **change over time**.
+
+### Sliding-window methods
+
+By dividing the time series into smaller windows,
+we can compute connectivity within each window
+and track how it evolves.
+
+<div align="center">
+  <img src="Sliding-Windows.png" width="65%">
+</div>
+
+### Empirical example of my dataset
+
+The figure below is the funal result.
+
+It shows that connectivity patterns are **not constant**.
+
+<div align="center">
+  <p><b>Window-to-Window FC Similarity</b></p>
+  <img src="sch100_window_to_window_fc_similarity.png" width="50%">
+</div>
+
+Static analysis would average all this temporal structure away.
 
 ### The Problem with Static FC
 
