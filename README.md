@@ -25,7 +25,7 @@ In task-free conditions, brain connectivity is usually not static.
 
 Instead, 
 
-**dynamic functional connectivity (dFC)** captures how connectivity patterns **change over time**.
+**dynamic functional connectivity (dFC)** captures how **connectivity patterns** **change over time**.
 
 ### Sliding-window methods
 
