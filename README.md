@@ -151,12 +151,12 @@ To make results **biologically meaningful**, I upgraded to the **Schaefer 100 at
 
 <div align="center">
   <p><b>Grid Atlas — dFC Mean Connectivity Trajectory</b></p>
-  <img src="figures/pilot_dfc_variability_matrix.png" alt="dFC variability matrix" width="48%">
+  <img src="figures/pilot_dfc_variability_matrix.png" alt="dFC variability matrix" width="38%">
 </div>
 
 <div align="center">
   <p><b>Schaefer 100 — dFC Variability Matrix</b></p>
-  <img src="sch100_dfc_variability_matrix.png" alt="Schaefer dFC variability" width="48%">
+  <img src="sch100_dfc_variability_matrix.png" alt="Schaefer dFC variability" width="58%">
 </div>
 
 ### Brighter edges = higher temporal fluctuation. 
