@@ -19,6 +19,12 @@ Prolonged, task-free scans capture **intrinsic brain dynamics** without external
 
 Traditional **static functional connectivity (sFC)** averages the entire scan into a single matrix — **erasing temporal dynamics completely**.
 
+<div align="center">
+  <p><b>dFC method: Sliding Windows</b></p>
+  <img src="Sliding-Windows.png" alt="Sliding_Windows_concepts" width="65%">
+</div>
+
+
 The figure below shows the reality: connectivity patterns are **not constant**. Different time windows form distinct similarity blocks.
 
 <div align="center">
