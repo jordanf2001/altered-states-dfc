@@ -130,7 +130,7 @@ To make results **biologically meaningful**, I upgraded to the **Schaefer 100 at
 
 <div align="center">
   <p><b>grid atlas - Static FC Matrix</b></p>
-  <img src="figures/pilot_static_fc_fisher_z_matrix.png" alt="Static FC matrix" width="70%">
+  <img src="figures/pilot_static_fc_fisher_z_matrix.png" alt="Static FC matrix" width="50%">
 </div>
 
 <div align="center">
