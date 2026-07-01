@@ -14,8 +14,8 @@ It is especially designed for **task-free and long-duration experiments**, where
 This makes it suitable for studying:
 
 - Resting-state brain activity  
-- Drug-induced altered states  
-- Sensory deprivation  
+- Drug-induced altered states (the dataset I use in this project) 
+- Sensory deprivation (my research focus)
 
 ## 2. Why Dynamics Matter
 
