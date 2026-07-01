@@ -152,6 +152,7 @@ These results are intended as **workflow-validation outputs**, not as evidence f
 A machine-readable summary of the pilot run is available at `outputs/pilot_summary.csv`.
 
 ### ROI Time-Series Extraction
+(extract ROI time series from 'fMRIPrep' outputs)
 
 <div align="center">
   <p><b>ROI Time-series Heatmap</b></p>
